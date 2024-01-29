@@ -24,6 +24,12 @@ function start() {
     $(document).off("keyup keydown keypress");
     getNewRandomColor();
   });
+  $("#start").on("click",function(){
+    reset();
+    $("h1").text(level + levelNo);
+    // $(document).off("keyup keydown keypress");
+    getNewRandomColor();
+  });
 }
 
 /* Get a new random Color and push to sequence */
